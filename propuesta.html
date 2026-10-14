@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ff5c8a">
+<meta name="description" content="Una pregunta especial para Grisell Mariana Cruz Fuentes.">
+<title>Una pregunta para ti, Grisell ♥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="hearts-bg"></div>
+
+<!-- ================= PROPUESTA ================= -->
+<section class="propuesta" id="propuesta">
+  <div class="ramo-grande" id="ramoPrincipal">💐</div>
+  <div class="gato-grande" id="gatoPrincipal">😻</div>
+  <h1 class="pregunta" data-aos="zoom-in">¿Quieres ser mi novia?</h1>
+  <p class="subtitulo" data-aos="fade-up" data-aos-delay="100">
+    Grisell Mariana Cruz Fuentes, este gatito y este ramo llevan rato esperándote… responde con el corazón, sin apuro. 💞
+  </p>
+  <div class="botones" data-aos="fade-up" data-aos-delay="200">
+    <button class="btn-si" id="btnSi" onclick="decirSi()">Sí, quiero 💘</button>
+    <button class="btn-no" id="btnNo" onclick="abrirNo()">No… 🙈</button>
+  </div>
+  <a class="enlace-abajo" href="index.html">← volver a leer la carta</a>
+</section>
+
+<!-- ================= MODAL DEL NO ================= -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="carita" id="caritaNo">🥺</div>
+    <h3 id="tituloNo">¿Dijiste que no?</h3>
+    <p id="textoNo">Uy… a este gatito se le cayó el ramo cuando te escuchó. ¿Segura, mi amor?</p>
+    <div class="botones">
+      <button class="btn-si" onclick="decirSi()">Mejor sí 💘</button>
+      <button class="btn-no" id="btnVolver" onclick="cerrarNo()">Volver a la pregunta 🔄</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CELEBRACIÓN (SÍ) ================= -->
+<div id="celebracion">
+  <div class="final-card">
+    <div class="final-emojis" id="ramoFinal">🌹💐🌹</div>
+    <h2>¡Dijo que SÍ! 💍</h2>
+    <p>¡Grisell Mariana Cruz Fuentes, eres oficialmente mi novia! No sabes la alegría que me acabas de dar. Prometo hacerte reír, cuidarte y elegirte cada día. Te quiero muchísimo. 💖</p>
+  </div>
+
+  <div class="final-card">
+    <div class="gato-grande" id="gatoFinal" style="font-size:clamp(60px,16vw,90px)">😻</div>
+    <h3 class="titulo-gato">El gato enamorado está feliz</h3>
+    <p style="opacity:.85">Dice que ahora eres parte de la familia y que te cuidará los zapatos. 🐾</p>
+
+    <div class="detalles">
+      <div class="detalle" style="animation-delay:.1s">
+        <span class="i">💐</span><span class="t">Ramo de rosas</span>
+        <span class="d">Uno eterno, que nunca se marchita.</span>
+      </div>
+      <div class="detalle" style="animation-delay:.25s">
+        <span class="i">🍫</span><span class="t">Chocolates</span>
+        <span class="d">Tan dulces como tu sonrisa.</span>
+      </div>
+      <div class="detalle" style="animation-delay:.4s">
+        <span class="i">🎶</span><span class="t">Nuestra canción</span>
+        <span class="d">Para bailar abrazados en la cocina.</span>
+      </div>
+      <div class="detalle" style="animation-delay:.55s">
+        <span class="i">🌙</span><span class="t">Citas infinitas</span>
+        <span class="d">Cada salida, un recuerdo nuevo.</span>
+      </div>
+      <div class="detalle" style="animation-delay:.7s">
+        <span class="i">📸</span><span class="t">Muchas fotos</span>
+        <span class="d">Para llenar el álbum de los dos.</span>
+      </div>
+      <div class="detalle" style="animation-delay:.85s">
+        <span class="i">♾️</span><span class="t">Te quiero</span>
+        <span class="d">Hoy, mañana y siempre.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="final-card">
+    <h2 style="font-size:clamp(26px,8vw,40px)">Mis promesas para ti 📝</h2>
+    <ul class="lista-promesas">
+      <li>💗 <span>Escucharte siempre, incluso cuando no sepas cómo explicarlo.</span></li>
+      <li>🌻 <span>Hacerte reír hasta en los días más pesados.</span></li>
+      <li>🤝 <span>Ser tu equipo en todo, en las buenas y en las difíciles.</span></li>
+      <li>⭐ <span>Apoyar tus sueños y celebrar cada uno de tus logros.</span></li>
+      <li>🏡 <span>Construir algo bonito, a nuestro ritmo, sin apuro.</span></li>
+    </ul>
+  </div>
+
+  <div class="final-card final-gradiente">
+    <h2 class="titulo-blanco">Te amo, mi niña 💞</h2>
+    <p>Gracias por existir y por decirme que sí. Esto apenas comienza… y quiero vivirlo todo contigo.</p>
+  </div>
+
+  <div class="centrado" style="margin-bottom:20px">
+    <a class="btn-continuar" href="index.html">Volver a leer la carta 💌</a>
+  </div>
+</div>
+
+<button id="musica" title="Ponle música" onclick="alternarMusica()">🎵</button>
+
+<audio id="audioMusica" loop preload="none">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-piano-113331.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+<script src="propuesta.js"></script>
+</body>
+</html>
